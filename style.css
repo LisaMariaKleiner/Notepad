@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    margin: 0;
+}
+    
+
+#content {
+    margin: 10px 10px 50px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    background-color: bisque;
+    padding-bottom: 20px;
+}
+
+#postDescription {
+    width: 500px;
+    height: 100px;
+    overflow-wrap: break-word;
+    margin-top: 5px;
+    border: 1px solid;
+    text-align: center;
+    box-shadow: 9px 1px 15px -2px #000000;
+}
+
+#createPost {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#bodyPosts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.postIts {
+  margin: 20px;
+  width: 170px;
+  white-space: pre-wrap;
+  height: auto;
+  padding: 25px 15px;
+  background:#fefabc;
+  background-color: #fefabc;
+  background-image: linear-gradient(150deg, #efec88 0%, #fefabc 100%);
+  border: 1px solid #cccccc;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  transform:rotate(4deg);
+  border-bottom-right-radius:60px 5px;
+}
+
+.postIts::before {
+    content: "";
+    background-color: rgba(0,0,0,0.025);
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0;
+    height: 40px;
+    z-index: -1;
+}
+.postIts::after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+    width: 100%;
+    height: 140px;
+    background-image: linear-gradient(173deg, rgba(0,0,0,0) 92%,
+    rgba(0,0,0,0.4) 100%);
+    transform: rotate(6deg);
+    z-index: -1;
+    filter: blur(2px);
+  }
+  .postIts:hover {
+    transform: scale(1.2);
+  }
+  #postTitle {
+    text-align: center;
+    margin: 0.5em 0 0;
+    line-height:1em;
+  }
+
+
+.image_button {
+    background-image: url('img/icons8-löschen-32.png');
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.image_button:hover {
+    transition: transform 0.8s;
+    width: 50px;
+    height: 50px;
+}
+
+#trash_img {
+    
+   padding-top: 10px;
+}
+
+
+@media (max-width: 550px) {
+
+    #postDescription {
+        width: 300px;
+        height: 50px;
+        overflow-wrap: break-word;
+        margin-top: 5px;
+        border: 1px solid;
+        text-align: center;
+        box-shadow: 9px 1px 15px -2px #000000;
+    }
+
+    #bodyPosts {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: baseline;
+        gap: 20px;
+    }
+}
+

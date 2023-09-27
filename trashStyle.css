@@ -1,0 +1,66 @@
+#content-trash {
+    margin: 10px 10px 50px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    background-color: bisque;
+    padding-bottom: 20px;
+}
+
+#trash_Post {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 30px;
+    padding-left: 10px;
+}
+
+.image_button_restore {
+  background-image: url('img/icons8-wiederherstellen-32.png');
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.image_button_restore:hover {
+  transition: transform 0.8s;
+  width: 35px;
+  height: 35px;
+}
+
+.image_button_delete {
+  background-image: url('img/icons8-unwiederuflich-löschen-32.png');
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.image_button_delete:hover {
+  background-image: url('img/icons8-unwiederuflich-löschen-32.png');
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.buttonsTrash {
+  display: flex;
+  justify-content: space-around;
+}

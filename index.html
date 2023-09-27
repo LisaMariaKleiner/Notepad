@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="trashStyle.css">
+    <script src="script.js"></script>
+    <script src="trash.js"></script>
+    <link rel="icon" type="image/png" href="./img/faviconLesezeichen.png">
+    <title>Notizblock</title>
+</head>
+
+<body onload="render()">
+
+    <div id="content">
+
+        <h1>Dein Notizblock</h1>
+    
+        <input id="postTitle" type="text" placeholder="Titel deiner Notiz" ><br>
+        <label for="text">Was gibt es zu erledigen?...</label>
+        <textarea rows="4" cols="50" id="postDescription" name="text" placeholder="Notiz"></textarea>
+        <button onclick="addNote()" id="createPost" onkeypress="checkEnter(event)">Notiz erstellen</button>
+    
+        <div id="trash_img">
+            <a href="trash.html"><img src="./img/icons8-löschen-32.png"></a>
+        </div> 
+    </div>
+
+    
+
+    <div id="bodyPosts">
+    </div>
+</body>
+
+</html>
